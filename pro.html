@@ -1,0 +1,284 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StayEase - Hotel Booking</title>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>StayEase</h1>
+        <p>Find your perfect stay, anywhere.</p>
+
+        <nav>
+            <a href="#home">Home</a> |
+            <a href="#hotels">Hotels</a> |
+            <a href="#offers">Offers</a> |
+            <a href="#contact">Contact</a>
+        </nav>
+        <hr>
+    </header>
+
+    <!-- Home Section -->
+    <main>
+        <section id="home">
+            <h2>Welcome to StayEase</h2>
+            <h3>Discover amazing hotels around the world!</h3>
+            <p>Book comfortable rooms at affordable prices.</p>
+
+            <img
+                src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1000"
+                alt="Beautiful luxury hotel"
+                width="600"
+            >
+        </section>
+
+        <hr>
+
+        <!-- Hotel Search Form -->
+        <section id="search">
+            <h2>Search Hotels</h2>
+
+            <form action="#hotels" method="get">
+                <label for="destination">Destination:</label>
+                <input
+                    type="text"
+                    id="destination"
+                    name="destination"
+                    placeholder="Enter city or hotel"
+                    required
+                >
+
+                <br><br>
+
+                <label for="checkin">Check-in:</label>
+                <input
+                    type="date"
+                    id="checkin"
+                    name="checkin"
+                    required
+                >
+
+                <br><br>
+
+                <label for="checkout">Check-out:</label>
+                <input
+                    type="date"
+                    id="checkout"
+                    name="checkout"
+                    required
+                >
+
+                <br><br>
+
+                <label for="guests">Guests:</label>
+                <select id="guests" name="guests">
+                    <option value="1">1 Guest</option>
+                    <option value="2" selected>2 Guests</option>
+                    <option value="3">3 Guests</option>
+                    <option value="4">4 Guests</option>
+                    <option value="5">5 Guests</option>
+                </select>
+
+                <br><br>
+
+                <label for="rooms">Rooms:</label>
+                <select id="rooms" name="rooms">
+                    <option value="1">1 Room</option>
+                    <option value="2">2 Rooms</option>
+                    <option value="3">3 Rooms</option>
+                </select>
+
+                <br><br>
+
+                <button type="submit">Search Hotels</button>
+            </form>
+        </section>
+
+        <hr>
+
+        <!-- Hotels Section -->
+        <section id="hotels">
+            <h2>Featured Hotels</h2>
+            <p>Choose your favorite hotel and enjoy your stay.</p>
+
+            <!-- Hotel 1 -->
+            <article>
+                <h3>1. Grand Palace Hotel</h3>
+
+                <img
+                    src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=700"
+                    alt="Grand Palace hotel swimming pool"
+                    width="400"
+                >
+
+                <p><strong>Location:</strong> Hyderabad, Telangana</p>
+                <p><strong>Rating:</strong> 5/5</p>
+                <p><strong>Room Type:</strong> Deluxe Room</p>
+                <p><strong>Facilities:</strong> Wi-Fi, Swimming Pool, Restaurant</p>
+                <p><strong>Price:</strong> ₹4,500 per night</p>
+
+                <a href="#booking">Book This Hotel</a>
+            </article>
+
+            <hr>
+
+            <!-- Hotel 2 -->
+            <article>
+                <h3>2. Ocean View Resort</h3>
+
+                <img
+                    src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=700"
+                    alt="Ocean View Resort swimming pool"
+                    width="400"
+                >
+
+                <p><strong>Location:</strong> Goa, India</p>
+                <p><strong>Rating:</strong> 4/5</p>
+                <p><strong>Room Type:</strong> Sea View Room</p>
+                <p><strong>Facilities:</strong> Beach Access, Wi-Fi, Restaurant</p>
+                <p><strong>Price:</strong> ₹3,800 per night</p>
+
+                <a href="#booking">Book This Hotel</a>
+            </article>
+
+            <hr>
+
+            <!-- Hotel 3 -->
+            <article>
+                <h3>3. Mountain Comfort Inn</h3>
+
+                <img
+                    src="https://images.unsplash.com/photo-1511895426328-dc8714191300?w=700"
+                    alt="Mountain resort surrounded by nature"
+                    width="400"
+                >
+
+                <p><strong>Location:</strong> Manali, Himachal Pradesh</p>
+                <p><strong>Rating:</strong> 4/5</p>
+                <p><strong>Room Type:</strong> Premium Room</p>
+                <p><strong>Facilities:</strong> Mountain View, Wi-Fi, Room Service</p>
+                <p><strong>Price:</strong> ₹2,500 per night</p>
+
+                <a href="#booking">Book This Hotel</a>
+            </article>
+        </section>
+
+        <hr>
+
+        <!-- Offers Section -->
+        <section id="offers">
+            <h2>Special Offers</h2>
+
+            <ul>
+                <li>Get 10% off your first booking.</li>
+                <li>Enjoy special rates for family stays.</li>
+                <li>Book three nights and explore exclusive offers.</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <!-- Booking Form -->
+        <section id="booking">
+            <h2>Booking Request</h2>
+            <p>Enter your details to prepare a hotel booking request.</p>
+
+            <form action="#" method="get">
+                <label for="fullname">Full Name:</label>
+                <input
+                    type="text"
+                    id="fullname"
+                    name="fullname"
+                    placeholder="Enter your name"
+                    required
+                >
+
+                <br><br>
+
+                <label for="email">Email Address:</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    required
+                >
+
+                <br><br>
+
+                <label for="phone">Phone Number:</label>
+                <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="Enter your phone number"
+                    required
+                >
+
+                <br><br>
+
+                <label for="hotel">Select Hotel:</label>
+                <select id="hotel" name="hotel" required>
+                    <option value="">Choose a hotel</option>
+                    <option value="grand-palace">Grand Palace Hotel</option>
+                    <option value="ocean-view">Ocean View Resort</option>
+                    <option value="mountain-comfort">Mountain Comfort Inn</option>
+                </select>
+
+                <br><br>
+
+                <label for="arrival">Arrival Date:</label>
+                <input type="date" id="arrival" name="arrival" required>
+
+                <br><br>
+
+                <label for="departure">Departure Date:</label>
+                <input type="date" id="departure" name="departure" required>
+
+                <br><br>
+
+                <label for="message">Special Requests:</label>
+                <br>
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="4"
+                    cols="35"
+                    placeholder="Enter any special requests"
+                ></textarea>
+
+                <br><br>
+
+                <button type="submit">Submit Booking Request</button>
+                <button type="reset">Clear Form</button>
+            </form>
+        </section>
+
+        <hr>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Email: support@stayease.example</p>
+            <p>Phone: +91 98765 43210</p>
+            <p>Address: Hyderabad, Telangana, India</p>
+        </section>
+    </main>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 StayEase Hotel Booking. All rights reserved.</p>
+
+        <p>
+            <a href="#home">Back to Top</a>
+        </p>
+    </footer>
+
+</body>
+</html>
